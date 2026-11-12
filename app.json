@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "billing-pos",
+    "slug": "billing-pos",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sharing",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Fast POS to access your camera to scan item barcodes."
+        }
+      ],
+      "expo-audio",
+      "expo-asset"
+    ]
+  }
+}
